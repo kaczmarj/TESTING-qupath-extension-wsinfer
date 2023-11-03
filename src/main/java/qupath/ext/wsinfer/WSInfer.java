@@ -162,6 +162,7 @@ public class WSInfer {
         }
 
         Device device = getDevice();
+        logger.info("Using device: {}", device);
 
         Pipeline pipeline = new Pipeline();
         int resize = -1;
