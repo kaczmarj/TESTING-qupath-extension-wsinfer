@@ -51,7 +51,7 @@ class PytorchManager {
         }
         // CPU should always be available and listed first
         if (!availableDevices.contains("cpu"))
-            availableDevices.add(0, "cpu");
+            availableDevices.add("cpu");
 
         // If we could use MPS, but don't have it already, add it
         if (!includesMPS && GeneralTools.isMac() && "aarch64".equals(System.getProperty("os.arch"))) {
